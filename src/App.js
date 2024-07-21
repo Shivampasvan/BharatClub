@@ -141,7 +141,7 @@ function App() {
         </Text>
       </Box> */}
 
-      <Box textAlign={"center"} marginTop={5} marginBottom={10}>
+      <Box textAlign={"center"} marginTop={5} marginBottom={20}>
         <Link
           href="https://bharatclub.net/#/register?invitationCode=84682491075"
           isExternal
@@ -156,7 +156,7 @@ function App() {
         </Link>
       </Box>
 
-      <Box justifyContent="center" alignItems="center">
+      <Box justifyContent="center" alignItems="center" marginBottom={16}>
         <Image src="banner.jpeg" alt="BHARAT CLUB BANNER" margin={"auto"} />
       </Box>
     </div>
