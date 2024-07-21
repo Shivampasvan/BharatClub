@@ -64,7 +64,7 @@ function App() {
         </Link>
       </SimpleGrid>
 
-      <Box width={{base:"95%", sm:"90%", md:"80%", lg:"70%"}} margin={"auto"} textAlign={"center"} my={10}>
+      <Box width={{base:"90%", sm:"90%", md:"80%", lg:"70%"}} margin={"auto"} textAlign={"center"} my={10}>
         <Text fontSize={{base:16, sm:16, md:20, lg:22}}>
           A multi-gaming niche platform where you can play and make money is the
           Bharat Club. The Bharat Club App has included ten gaming categories,
@@ -141,7 +141,7 @@ function App() {
         </Text>
       </Box> */}
 
-      <Box textAlign={"center"} marginTop={5} marginBottom={20}>
+      <Box textAlign={"center"} marginTop={5} marginBottom={12}>
         <Link
           href="https://bharatclub.net/#/register?invitationCode=84682491075"
           isExternal
@@ -156,7 +156,7 @@ function App() {
         </Link>
       </Box>
 
-      <Box justifyContent="center" alignItems="center" marginBottom={16}>
+      <Box justifyContent="center" alignItems="center" marginBottom={8}>
         <Image src="banner.jpeg" alt="BHARAT CLUB BANNER" margin={"auto"} />
       </Box>
     </div>
