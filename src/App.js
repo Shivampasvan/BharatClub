@@ -76,7 +76,6 @@ function App() {
       </Box>
 
       <SimpleGrid
-      border={'2px solid red'}
         columns={{ base: 1, sm: 1, md: 2, lg: 2 }}
         width={"60%"}
         margin={"auto"}
