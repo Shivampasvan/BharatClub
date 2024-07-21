@@ -1,4 +1,4 @@
-import { Box, Image, Link, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Button, Image, Link, SimpleGrid, Text } from "@chakra-ui/react";
 import "./App.css";
 
 function App() {
@@ -8,19 +8,21 @@ function App() {
         style={{
           margin: "auto",
           textAlign: "center",
-          width: "50%",
           lineHeight: 1,
           marginBottom: 30,
           marginTop: 30,
         }}
       >
         <Text
-          style={{ fontSize: "52px", fontWeight: 800, fontStyle: "roboto" }}
+          fontSize={{ base: "30px", sm: "30px", md: "40px", lg: "52px" }}
+          fontWeight={800}
+          fontStyle= {"roboto"}
         >
           Bharat Club
           <br />
           <span
-            style={{ color: "whitesmoke", fontSize: "36px", fontWeight: 600 }}
+            style={{ color: "whitesmoke"}}
+            fontSize={{base:'20px', sm:'28px', md:'28px', lg:'36px'}}
           >
             Colour Prediction App
           </span>
@@ -30,35 +32,40 @@ function App() {
       <SimpleGrid
         columns={{ base: 1, sm: 1, md: 2, lg: 2 }}
         justifyContent={"space-between"}
-        // border={"2px solid red"}
         margin={"auto"}
         width={"50%"}
-        gap={10}
-        textAlign={'center'}
+        gap={{base:6, sm:6, md:0, lg:0}}
+        textAlign={"center"}
       >
-      <Link href='https://bharatclub.net/#/register?invitationCode=84682491075' isExternal>
-        <button
-          class="button-85"
-          role="button"
-          style={{ margin: "auto", fontSize: 20, fontWeight: 600 }}
+        <Link
+          href="https://bharatclub.net/#/register?invitationCode=84682491075"
+          isExternal
         >
-          LogIn
-        </button>
-      </Link>
+          <Button
+            class="button-85"
+            role="button"
+            style={{ margin: "auto", fontSize: 16, fontWeight: 600 }}
+          >
+            LogIn
+          </Button>
+        </Link>
 
-      <Link href='https://bharatclub.net/#/register?invitationCode=84682491075' isExternal>
-        <button
-          class="button-85"
-          role="button"
-          style={{ margin: "auto", fontSize: 20, fontWeight: 600 }}
+        <Link
+          href="https://bharatclub.net/#/register?invitationCode=84682491075"
+          isExternal
         >
-          Register
-        </button>
-      </Link>  
+          <Button
+            class="button-85"
+            role="button"
+            style={{ margin: "auto", fontSize: 16, fontWeight: 600 }}
+          >
+            Register
+          </Button>
+        </Link>
       </SimpleGrid>
 
-      <Box width={"70%"} margin={"auto"} textAlign={"center"} my={10}>
-        <Text fontSize={22}>
+      <Box width={{base:"95%", sm:"90%", md:"80%", lg:"70%"}} margin={"auto"} textAlign={"center"} my={10}>
+        <Text fontSize={{base:16, sm:16, md:20, lg:22}}>
           A multi-gaming niche platform where you can play and make money is the
           Bharat Club. The Bharat Club App has included ten gaming categories,
           which are Original games, Slot games, Colour Prediction games, eSports
@@ -69,82 +76,89 @@ function App() {
       </Box>
 
       <SimpleGrid
-      columns={{ base: 1, sm: 1, md: 2, lg: 2 }}
-      width={'70%'}
-      margin={'auto'}
-      justifyContent={'space-between'}
-      alignItems={'center'}
-    >
-      <Box justifyContent="center" alignItems="center">
-        <Image src="bharatclub.jpeg" alt="BHARAT CLUB" height={270} />
-      </Box>
+        columns={{ base: 1, sm: 1, md: 2, lg: 2 }}
+        width={"70%"}
+        margin={"auto"}
+        justifyContent={"space-between"}
+        alignItems={"center"}
+        // display={{base:'grid'}}
+        // textAlign={{base:'center'}}
+      >
+        <Box margin={{base:'auto'}}>
+          <Image src="bharatclub.jpeg" alt="BHARAT CLUB"  height={270} />
+        </Box>
 
-      <Box justifyContent="center" alignItems="center" >
-        <table
-          style={{
-            border: "1px solid white",
-            borderCollapse: "collapse",
-            width: "100%",
-            height: 'auto'
-          }}
-        >
-          <tbody>
-            <tr>
-              <td style={{ border: "1px solid white", padding: "8px" }}>
-              App Name
-              </td>
-              <td style={{ border: "1px solid white", padding: "8px" }}>
-              Bharat Club App
-              </td>
-            </tr>
-            <tr>
-              <td style={{ border: "1px solid white", padding: "8px" }}>
-              Invite Code To Register	
-              </td>
-              <td style={{ border: "1px solid white", padding: "8px" }}>
-              67526237675
-              </td>
-            </tr>
-            <tr>
-              <td style={{ border: "1px solid white", padding: "8px" }}>
-              Gaming Categories	              </td>
-              <td style={{ border: "1px solid white", padding: "8px" }}>
-              10
-              </td>
-            </tr>
-            <tr>
-              <td style={{ border: "1px solid white", padding: "8px" }}>
-              Bharat Club APK Size	              </td>
-              <td style={{ border: "1px solid white", padding: "8px" }}>
-              18.8 MB
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </Box>
-    </SimpleGrid>
+        <Box justifyContent="center" alignItems="center" fontSize={{base:12, sm:12, md:16, lg:16}}>
+          <table
+            style={{
+              border: "1px solid white",
+              borderCollapse: "collapse",
+              width: "100%",
+              height: "auto",
+            }}
+          >
+            <tbody>
+              <tr>
+                <td style={{ border: "1px solid white", padding: "8px" }}>
+                  App Name
+                </td>
+                <td style={{ border: "1px solid white", padding: "8px" }}>
+                  Bharat Club App
+                </td>
+              </tr>
+              <tr>
+                <td style={{ border: "1px solid white", padding: "8px" }}>
+                  Invite Code To Register
+                </td>
+                <td style={{ border: "1px solid white", padding: "8px" }}>
+                  67526237675
+                </td>
+              </tr>
+              <tr>
+                <td style={{ border: "1px solid white", padding: "8px" }}>
+                  Gaming Categories{" "}
+                </td>
+                <td style={{ border: "1px solid white", padding: "8px" }}>
+                  10
+                </td>
+              </tr>
+              <tr>
+                <td style={{ border: "1px solid white", padding: "8px" }}>
+                  Bharat Club APK Size{" "}
+                </td>
+                <td style={{ border: "1px solid white", padding: "8px" }}>
+                  18.8 MB
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </Box>
+      </SimpleGrid>
 
-    <Box width={"80%"} margin={"auto"} textAlign={"center"} my={10}>
-        <Text fontSize={22}>
-        For customer support or promotion related query, message Aryah – <Link>https://t.me/AryahVIPBharatAccount</Link>
+      <Box width={"80%"} margin={"auto"} textAlign={"center"} my={10}>
+        <Text fontSize={{base:16, sm:16, md:20, lg:22}}>
+          For customer support or promotion related query, message Aryah –{" "}
+          <Link href="https://t.me/AryahVIPBharatAccount" isExternal>https://t.me/AryahVIPBharatAccount</Link>
         </Text>
       </Box>
 
-      <Box textAlign={'center'} marginTop={5} marginBottom={10}>
-      <Link href="https://bharatclub.net/#/register?invitationCode=84682491075" isExternal>
-      <button
-          class="button-85"
-          role="button"
-          style={{ fontSize: 20, fontWeight: 600 }}
+      <Box textAlign={"center"} marginTop={5} marginBottom={10}>
+        <Link
+          href="https://bharatclub.net/#/register?invitationCode=84682491075"
+          isExternal
         >
-          Register Now on Bharat Club App
-        </button>
-      </Link>
+          <Button
+            class="button-85"
+            role="button"
+            style={{ fontSize: 16, fontWeight: 600 }}
+          >
+            Register Now on Bharat Club App
+          </Button>
+        </Link>
       </Box>
 
-
       <Box justifyContent="center" alignItems="center">
-        <Image src="banner.jpeg" alt="BHARAT CLUB BANNER" margin={'auto'}/>
+        <Image src="banner.jpeg" alt="BHARAT CLUB BANNER" margin={"auto"} />
       </Box>
     </div>
   );
