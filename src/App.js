@@ -34,7 +34,9 @@ function App() {
         margin={"auto"}
         width={"50%"}
         gap={10}
+        textAlign={'center'}
       >
+      <Link href='https://bharatclub.net/#/register?invitationCode=84682491075' isExternal>
         <button
           class="button-85"
           role="button"
@@ -42,6 +44,9 @@ function App() {
         >
           LogIn
         </button>
+      </Link>
+
+      <Link href='https://bharatclub.net/#/register?invitationCode=84682491075' isExternal>
         <button
           class="button-85"
           role="button"
@@ -49,6 +54,7 @@ function App() {
         >
           Register
         </button>
+      </Link>  
       </SimpleGrid>
 
       <Box width={"70%"} margin={"auto"} textAlign={"center"} my={10}>
@@ -125,6 +131,7 @@ function App() {
       </Box>
 
       <Box textAlign={'center'} marginTop={5} marginBottom={10}>
+      <Link href="https://bharatclub.net/#/register?invitationCode=84682491075" isExternal>
       <button
           class="button-85"
           role="button"
@@ -132,6 +139,7 @@ function App() {
         >
           Register Now on Bharat Club App
         </button>
+      </Link>
       </Box>
 
 
