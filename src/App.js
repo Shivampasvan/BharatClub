@@ -109,7 +109,7 @@ function App() {
                   Invite Code To Register
                 </td>
                 <td style={{ border: "1px solid white", padding: "8px" }}>
-                  67526237675
+                84682491075
                 </td>
               </tr>
               <tr>
@@ -133,12 +133,12 @@ function App() {
         </Box>
       </SimpleGrid>
 
-      <Box width={"80%"} margin={"auto"} textAlign={"center"} my={10}>
+      {/* <Box width={"80%"} margin={"auto"} textAlign={"center"} my={10}>
         <Text fontSize={{base:16, sm:16, md:20, lg:22}}>
           For customer support or promotion related query, message Aryah –{" "}
           <Link href="https://t.me/AryahVIPBharatAccount" isExternal>https://t.me/AryahVIPBharatAccount</Link>
         </Text>
-      </Box>
+      </Box> */}
 
       <Box textAlign={"center"} marginTop={5} marginBottom={10}>
         <Link
