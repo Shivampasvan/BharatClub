@@ -81,6 +81,7 @@ function App() {
         margin={"auto"}
         justifyContent={"space-between"}
         alignItems={"center"}
+        marginBottom={20}
       >
         <Box margin={{base:'auto'}}>
           <Image src="bharatclub.jpeg" alt="BHARAT CLUB"  height={270} />
