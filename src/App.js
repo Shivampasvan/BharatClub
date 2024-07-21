@@ -76,15 +76,14 @@ function App() {
       </Box>
 
       <SimpleGrid
+      border={'2px solid red'}
         columns={{ base: 1, sm: 1, md: 2, lg: 2 }}
-        width={"70%"}
+        width={"60%"}
         margin={"auto"}
         justifyContent={"space-between"}
         alignItems={"center"}
-        // display={{base:'grid'}}
-        // textAlign={{base:'center'}}
       >
-        <Box margin={{base:'auto'}}>
+        <Box >
           <Image src="bharatclub.jpeg" alt="BHARAT CLUB"  height={270} />
         </Box>
 
